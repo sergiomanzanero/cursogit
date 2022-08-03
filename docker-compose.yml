@@ -1,0 +1,28 @@
+version: '3'
+services:
+  jekyll:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fullstackstoriesio:latest
+    environment:
+      - TZ=Europe/Madrid
+      - BUNDLE_DATA=/gems
+    volumes:
+      - .:/Users/sergio/Desktop/cvapp:delegated
+      - ../jekyll-fssio-theme:/Users/sergio/Desktop/cv/jekyll-fssio-theme:delegated
+      - ../jekyll-canvas-theme:/Users/sergio/Desktop/cv/jekyll-canvas-theme:delegated
+      - ./docker-data/irb-history:/root/.irb-history
+      - ./docker-data/.bash_history:/home/jekyll/.bash_history
+      - gems_cache:/gems:delegated
+      - node_modules_cache:/Users/sergio/Desktop/cv/node_modules
+    ports:
+      - "4000:4000"
+      - "5000:5000"
+
+volumes:
+  gems_cache:
+  node_modules_cache:
+Ƒ
