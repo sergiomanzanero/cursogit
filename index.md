@@ -9,6 +9,7 @@ list_title: Recent from the blog
 ---
 
 
+
 <div class="section dark " style="background-image: url('{{ "/assets/images/coding_with_love_since_2004_1440x600px.jpeg" | relative_url }}'); padding: 300px 0; margin-top: -80px; background-position: right center; background-size: cover">
 </div>
 
