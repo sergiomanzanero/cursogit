@@ -5,7 +5,7 @@
 layout: home
 menu_title: Home
 menu_order: 1
-list_title: Recent from the blog and test
+list_title: Recent from the blog y mas
 ---
 
 
